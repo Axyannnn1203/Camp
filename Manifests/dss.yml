@@ -29,7 +29,7 @@ spec:
     spec:
       containers:
         - name: yelp-camp-container
-          image: aryan12032003/camp:latest
+          image: anushka890/camp:latest
           ports:
             - containerPort: 3000
           env:
@@ -63,16 +63,23 @@ spec:
                 secretKeyRef:
                   name: yelp-camp-secrets
                   key: SECRET
+          resources:
+            requests:
+              cpu: "100m"
+              memory: "128Mi"
+            limits:
+              cpu: "500m"
+              memory: "256Mi"
           livenessProbe:
             httpGet:
               path: /
               port: 3000
-            initialDelaySeconds: 30   # Adjust the initial delay here
+            initialDelaySeconds: 30
           readinessProbe:
             httpGet:
               path: /
               port: 3000
-            initialDelaySeconds: 30   # Adjust the initial delay here
+            initialDelaySeconds: 30
 
 ---
 apiVersion: v1
