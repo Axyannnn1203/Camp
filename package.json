@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"There are no test-cases\" && exit 0",
     "start": "node app.js"
+    "test": "jest --passWithNoTests --coverage --collectCoverageFrom='**/*.js'"
   },
   "keywords": [],
   "author": "",
