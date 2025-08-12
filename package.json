@@ -4,9 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"There are no test-cases\" && exit 0",
+    "test": "jest --passWithNoTests --coverage --collectCoverageFrom='**/*.js'",
     "start": "node app.js"
-    "test": "jest --passWithNoTests --coverage --collectCoverageFrom='**/*.js'"
   },
   "keywords": [],
   "author": "",
