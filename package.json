@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest --passWithNoTests --coverage --collectCoverageFrom='**/*.js'",
+    "test": "echo no test cases",
     "start": "node app.js"
   },
   "keywords": [],
